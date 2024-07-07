@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 body {
-  background-color: black;
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -13,22 +12,45 @@ body {
 #root {
   width: 100%;
   height: 100%;
+  user-select: none;
 }
 
 .calendar-day,
-.calendar-week-header {
+.calendar-week-header,
+.calendar-prev-month-day,
+.calendar-next-month-day {
   width: calc(100% / 7);
-  border: 1px solid #ccc;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  line-height: 1.5;
+}
+
+.calendar-prev-month-day,
+.calendar-next-month-day {
+  color: rgb(175, 175, 175)
 }
 
 .calendar-day {
-  font-weight: 500;
+  font-weight: 600;
+  color: rgb(37, 37, 37);
 }
 
 .calendar-week-header {
-  color: #ccc;
+  color: rgb(109, 109, 109);
+  margin-bottom: 10px;
+}
+
+.weekend {
+  color: rgb(119, 119, 119);
+}
+
+.calendar-month-name {
+  color: rgb(248, 49, 56)
+}
+
+.today {
+  background-color: rgb(248, 49, 56);
+  color: white;
 }

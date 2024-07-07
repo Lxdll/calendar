@@ -1,4 +1,4 @@
-import { it, expect, describe, test } from 'vitest'
+import { expect, test } from 'vitest'
 import { getDaysCount } from '../utils'
 
 test('January days count', () => {
