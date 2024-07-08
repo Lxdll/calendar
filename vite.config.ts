@@ -7,8 +7,5 @@ export default defineConfig({
   server: {
     cors: true
   },
-  base: './',
-  build: {
-    outDir: 'docs'
-  }
+  base: './'
 })
