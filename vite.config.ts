@@ -7,5 +7,9 @@ export default defineConfig({
   server: {
     cors: true
   },
-  base: './'
+  base: './',
+  esbuild: {
+    target: 'esnext',
+    platform: 'browser'
+  }
 })
