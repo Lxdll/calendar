@@ -2,6 +2,7 @@
   "name": "calendar-mac",
   "version": "0.0.1",
   "type": "module",
+  "homepage": "https://lxdll.github.io/calendar",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
