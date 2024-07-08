@@ -3,7 +3,7 @@ name: Calendar
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
